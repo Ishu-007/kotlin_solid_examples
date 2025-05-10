@@ -1,7 +1,7 @@
 // SRP stands for Single Responsibility Principle and suggests us that there should'n be more than one reason for a class to change.
 
 /**
- * File: RestaurantManager_Bad.kt
+ * File: Restaurant_Bad.kt
  * Purpose: Demonstrates a violation of the Single Responsibility Principle (SRP)
  * 
  * Description:
@@ -16,22 +16,22 @@ class RestaurantManager {
 
     // taking orders from customer
     fun takeOrder () {
-        println("Taking Order.")
+        println("Manager Taking Order.")
     }
 
     // preparing the food for the order
     fun prepareFood () {
-        println("Preparing Food.")
+        println("Manager Preparing Food.")
     }
 
     // serving the food for the order
     fun serveFood () {
-        println("Serving Food.")
+        println("Manager Serving Food.")
     }
 
     // creating the invoice
     fun createInvoice () {
-        println("Creating Invoice.")
+        println("Manager Creating Invoice.")
     }
 
 }
